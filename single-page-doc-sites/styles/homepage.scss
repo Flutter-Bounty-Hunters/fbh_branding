@@ -10,6 +10,7 @@ html, body {
 
 h1, h2, h3, h4, h5, h6 {
   color: $headerColor;
+  font-family: $pageFontFamily;
   text-align: center;
   text-wrap: balance;
 }
@@ -21,12 +22,12 @@ h1, h2, h3, h4, h5, h6 {
   display: flex;
   flex-direction: column;
 
+  text-align: center;
+
   padding-top: 48px;
   @media (max-width: $phoneWidth) {
     padding-top: 24px;
   }
-
-  text-align: center;
 
   // Gap between Flutter/Dart logo and logo/title/description.
   .top-gap {
@@ -188,7 +189,6 @@ h1, h2, h3, h4, h5, h6 {
     color: #5F5F5F;
     font-size: 16px;
     font-weight: 600;
-    font-family: "SF Pro Text", "SF Pro";
     text-align: center;
     text-wrap: balance;
   }
@@ -205,7 +205,6 @@ main {
   text-align: center;
 
   h1, h2, h3, h4, h5, h6 {
-    font-family: "SF Pro";
     font-weight: bold;
     text-transform: uppercase;
   }
@@ -308,7 +307,6 @@ footer {
   color: #5F5F5F;
   font-size: 16px;
   font-weight: 600;
-  font-family: "SF Pro Text", "SF Pro";
 }
 
 .static-shock {
