@@ -1,5 +1,5 @@
 <ol style="display: flex; flex-wrap: wrap; justify-content: center; list-style-type: none; margin: 0; margin-top: 32px; padding: 0; text-align: center;">
-  {% set contributors = github["flutter-bounty-hunters"].flutter_test_robots %}
+  {% set contributors = github[package.github.organization][package.github.name] %}
   {% set contributorCount = 15 %}
   {% for contributor in contributors|take(contributorCount) %}
   <li style="display: inline-block; margin: 0; margin-right: 16px; margin-bottom: 16px; padding: 0;">
