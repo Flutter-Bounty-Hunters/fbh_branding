@@ -65,15 +65,21 @@
 
 <body>
   <div id="hero">
+    {% if show_logo == false %}
+    <div class="top-gap">&nbsp;</div>
+    {% endif %}
+
     {% if package.type == "flutter" %}
     <img id="flutterLogo" src="images/branding/flutter-logo.svg" height="48">
     {% else %}
     <img id="dartLogo" src="images/branding/dart-logo.svg" height="48">
     {% endif %}
 
+    {% if show_logo != false %}
     <div class="top-gap">&nbsp;</div>
 
     <img id="logo" src="images/branding/logo.png" width="192">
+    {% endif %}
 
     <span class="title">{{ package.title }}</span>
     <span class="subtitle">{{ package.description }}</span>
