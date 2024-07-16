@@ -80,9 +80,9 @@
 
     <div class="middle-gap">&nbsp;</div>
 
-    <div class="latest-version" onclick="copy('{{ package.name }}: ^{{ pub.flutter_test_robots.version }}')">
+    <div class="latest-version" onclick="copy('{{ package.name }}: ^{{ pub[package.name].version }}')">
       <span class="dependency-declaration">
-        <span class="name">{{ package.name }}:&nbsp;</span><span class="version">^{{ pub.flutter_test_robots.version }}</span>
+        <span class="name">{{ package.name }}:&nbsp;</span><span class="version">^{{ pub[package.name].version }}</span>
       </span>
       <a class="copy-button">
         <i class="fa-solid fa-copy"></i>
